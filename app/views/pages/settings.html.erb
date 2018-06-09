@@ -1,0 +1,16 @@
+<div class="container">
+<div class="row">
+<div class="col s12">
+    <h2>Products</h2>
+
+<ul>
+  <% @products.each do |product| %>
+    <li><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></li>
+  <% end %>
+</ul>
+    
+</div>
+<div class="col s6">
+</div>
+</div>
+</div>
